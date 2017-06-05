@@ -1,0 +1,167 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.board{
+	border: solid gray 4px;
+	width: 416px;
+	margin: 50px auto 0;
+	border-radius: 5px;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	background-color: #f6dfd5;
+	border: 2px solid gray;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	line-height: 90px;
+	font-size: 25px;
+	color: #555353;
+	transition-timing-function: ease-out;
+  transition: 0.25s;
+  border-radius: 1px;
+}
+
+._2 {
+	background-color: #A87CA0;
+}
+
+._4 {
+	background-color: #FF7C6C;
+}
+
+._8 {
+	background-color: #f39c12;
+}
+
+._16 {
+	background-color: #FFBCD8;
+}
+
+._32 {
+	background-color: #9b59b6;
+}
+
+._64 {
+	background-color: #3498db;
+}
+
+._128 {
+	background-color: #f1c40f;
+}
+
+._256 {
+	background-color: #1abc9c;
+}
+
+._512 {
+	background-color: #39D5FF;
+}
+
+._2048 {
+	background-color: #3EDC81;
+}
+
+@keyframes fade-in-game-over {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.game-over {
+	position: absolute;
+	font-size: 100px;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  color: #413c3a;
+  animation-name: fade-in-game-over;
+  animation-duration: 1s;
+}
+
+.submit-score {
+	text-align: center;
+}
+
+button {
+  color: #e6e6e6;
+  background: #0a0a0a;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+button:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+form {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+
+}
+
+input {
+	display: inline-block;
+	width: 200px;
+	border-radius: 3px;
+  padding: 8px 0;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  margin-left: 15px;
+}
+
+.new-game {
+	width: 10%;
+	margin-left: 45%;
+	margin-right: 45%;
+}
+
+.high-scores {
+	width: 150px;
+	margin: 0 auto;
+}
+
+.high-scores h3{
+	text-align: center;
+
+}
+
+.high-scores ul {
+	padding-left: 30px;
+}
